@@ -26,26 +26,19 @@ function updatePostText(){
     
 }
 
-//image upload and preview
-
 // Use this function to get an image source out of the the image upload box.
 function getImageFromUpload(){
     let image = document.querySelector("#imageUpload").files[0];
     return URL.createObjectURL(image);
 }
 
+//image upload and preview
 function updateImage(){
     let imageUrl = getImageFromUpload();
     let previewImage = document.getElementById("previewImage");
 
     previewImage.setAttribute("src", imageUrl);
 }
-
-
-
-
-
-
 
 //Image style selection
 function updateImageStyle(){
